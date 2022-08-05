@@ -4,7 +4,7 @@ import time, random
 
 # Username and password of your instagram account:
 my_username = 'abhiabhishek96529'
-my_password = 'Abhi27@#'
+my_password = 'Abhc'
 
 # Instagram username list for DM:
 usernames = ['user1', 'user2', 'user3']
