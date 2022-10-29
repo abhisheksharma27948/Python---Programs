@@ -1,4 +1,5 @@
 # python -m pip install selenium
+# pip install asyncio
 # python.exe -m pip install --upgrade pip
 from asyncio import sleep
 from selenium import webdriver
@@ -20,7 +21,7 @@ between_messages = 2000
 
 #browser = webdriver.Chrome('chromedriver')
 #driver = webdriver.Chrome('chromedriver')
-driver = webdriver.Chrome(executable_path="C:\\Users\Abhishek Sharma\\OneDrive\Desktop\\ICT Sem 3\\Programming with Python\\Project\\Program\\chromedriver")
+driver = webdriver.Chrome(executable_path="C:\\Users\\USER\\Desktop\\ICT\\GitHub\\Python---Programs\\Inst messsage\\chromedriver.exe")
 #driver = webdriver.Edge(executable_path="C:\\Users\Abhishek Sharma\\OneDrive\Desktop\\ICT Sem 3\\Programming with Python\\Project\\Program\\msedgedriver.exe")
 #driver = webdriver.Firefox(executable_path="C:\\Users\Abhishek Sharma\\OneDrive\Desktop\\ICT Sem 3\\Programming with Python\\Project\\Program\\geckodriver.exe")
 #driver = webdriver.Firefox(executable_path="C:\\Users\Abhishek Sharma\\OneDrive\Desktop\\ICT Sem 3\\Programming with Python\\Project\\Program\\setup-stub.exe")
@@ -75,7 +76,6 @@ def send_message(users, messages):
 	except Exception as err:
 		print(err)
 		webdriver.quit()
-
 
 auth(my_username, my_password)
 time.sleep(random.randrange(2,4))
